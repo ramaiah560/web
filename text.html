@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="test.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Assessment Dashboard</h1>
+        <button id="createAssessmentBtn">Create New Assessment</button>
+    </header>
+
+    <main>
+        <section id="searchAndFilters">
+            <input type="text" id="searchBar" placeholder="Search assessments...">
+            <div id="filters">
+                <label for="typeFilter">Type:</label>
+                <select id="typeFilter">
+                    <option value="all">All</option>
+                    <option value="quiz">Quiz</option>
+                    <option value="assignment">Assignment</option>
+                    <option value="survey">Survey</option>
+                </select>
+
+                <label for="sortOptions">Sort by:</label>
+                <select id="sortOptions">
+                    <option value="date">Date</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="completion">Completion Rate</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="myAssessments">
+            <h2>My Assessments</h2>
+            <ul id="assessmentList">
+                <!-- Assessments will be dynamically inserted here -->
+            </ul>
+        </section>
+
+        <section id="recentActivities">
+            <h2>Recent Activities</h2>
+            <ul id="activityList">
+                <!-- Recent activities will be dynamically inserted here -->
+            </ul>
+        </section>
+
+        <section id="analyticsSummary">
+            <h2>Assessment Analytics Summary</h2>
+            <ul id="analyticsList">
+                <!-- Analytics summaries will be dynamically inserted here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
